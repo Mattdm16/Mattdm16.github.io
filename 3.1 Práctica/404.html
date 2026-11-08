@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirigiendo…</title>
+    <script>
+      // Respaldo SPA para GitHub Pages: cualquier ruta no encontrada vuelve al dashboard.
+      (function () {
+        var parts = location.pathname.split('/').filter(Boolean);
+        var base = parts.length ? '/' + parts[0] + '/' : '/';
+        location.replace(base);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
